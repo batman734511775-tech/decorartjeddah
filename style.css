@@ -1948,3 +1948,128 @@ body {
         text-decoration: underline !important;
     }
 }
+
+/* ===== Reviews Section ===== */
+.reviews-section {
+    padding: 80px 0;
+    background: var(--light-bg);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-fast);
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reviewer-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.review-rating i {
+    color: #ffc107;
+    font-size: 14px;
+}
+
+.review-rating span {
+    color: var(--gray-medium);
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+.review-header time {
+    color: var(--gray-medium);
+    font-size: 0.9rem;
+}
+
+.review-text {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-style: italic;
+    padding-right: 10px;
+    border-right: 3px solid var(--primary-light);
+}
+
+.review-project {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Rating Summary */
+.rating-summary {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+}
+
+.rating-overall {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.rating-stars {
+    font-size: 24px;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.rating-count {
+    color: var(--gray-medium);
+    font-size: 1.1rem;
+}
