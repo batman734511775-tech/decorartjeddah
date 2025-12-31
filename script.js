@@ -63,7 +63,7 @@ class ProgressBar {
     }
 }
 
-// ===== إدارة السلايدر =====
+// ===== إدارة السلايدر المصحح =====
 class HeroSlider {
     constructor() {
         this.slides = document.querySelectorAll('.slide');
@@ -78,32 +78,46 @@ class HeroSlider {
     init() {
         if (this.slides.length === 0) return;
         
+        // عرض الشريحة الأولى
         this.showSlide(this.currentSlide);
         
-        if (this.prevBtn) this.prevBtn.addEventListener('click', () => this.prevSlide());
-        if (this.nextBtn) this.nextBtn.addEventListener('click', () => this.nextSlide());
+        // تصحيح أسماء الأزرار للغة العربية
+        // prev-slide هو الزر الأيسر (للتقدم للأمام)
+        // next-slide هو الزر الأيمن (للرجوع للخلف)
+        if (this.prevBtn) this.prevBtn.addEventListener('click', () => this.nextSlide());
+        if (this.nextBtn) this.nextBtn.addEventListener('click', () => this.prevSlide());
         
+        // إضافة أحداث المؤشرات
         this.indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', () => this.goToSlide(index));
         });
         
+        // بدء التشغيل التلقائي
         this.startAutoSlide();
+        
+        // إيقاف التشغيل التلقائي عند التمرير
         this.setupPauseOnHover();
+        
+        // دعم اللمس للجوال
         this.setupTouchEvents();
     }
 
     showSlide(index) {
+        // التأكد من أن الفهرس ضمن النطاق
         if (index >= this.slides.length) index = 0;
         if (index < 0) index = this.slides.length - 1;
         
+        // إخفاء جميع الشرائح
         this.slides.forEach(slide => {
             slide.classList.remove('active');
         });
         
+        // إزالة النشاط من جميع المؤشرات
         this.indicators.forEach(indicator => {
             indicator.classList.remove('active');
         });
         
+        // عرض الشريحة الحالية
         this.currentSlide = index;
         this.slides[index].classList.add('active');
         this.indicators[index].classList.add('active');
@@ -125,6 +139,7 @@ class HeroSlider {
     }
 
     startAutoSlide() {
+        // تبديل تلقائي كل 5 ثواني
         this.slideInterval = setInterval(() => {
             this.nextSlide();
         }, 5000);
@@ -169,11 +184,12 @@ class HeroSlider {
         const swipeThreshold = 50;
         const diff = startX - endX;
         
+        // تصحيح السحب للغة العربية
         if (Math.abs(diff) > swipeThreshold) {
             if (diff > 0) {
-                this.nextSlide();
+                this.nextSlide(); // سحب لليسار (يتقدم)
             } else {
-                this.prevSlide();
+                this.prevSlide(); // سحب لليمين (يرجع)
             }
         }
     }
