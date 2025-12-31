@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+Sitemap: https://decorartjeddah.vercel.app/sitemap.xml
+Crawl-delay: 2
