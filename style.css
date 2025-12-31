@@ -362,24 +362,31 @@ body {
     transition: var(--transition-fast);
 }
 
-/* ===== Hero Slider ===== */
+/* ===== Hero Slider - الإصلاح الكامل ===== */
 .hero-slider {
     height: 600px;
     position: relative;
     overflow: hidden;
     margin-top: -1px;
+    width: 100%;
+    max-width: 100vw;
+    right: 0;
+    left: 0;
 }
 
 .slider-container {
     height: 100%;
     position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .slide {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0; /* تأكد من أن الشريحة تبدأ من اليمين */
     width: 100%;
     opacity: 0;
     transition: opacity var(--transition-medium);
@@ -388,11 +395,12 @@ body {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start; /* تغيير من flex-end إلى flex-start */
 }
 
 .slide.active {
     opacity: 1;
+    z-index: 1;
 }
 
 .slide-content {
@@ -401,11 +409,12 @@ body {
     color: white;
     z-index: 2;
     position: relative;
-    right: 10%;
+    margin-right: 10%; /* تغيير من right إلى margin-right */
+    margin-left: 10%; /* إضافة margin-left للمركز */
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 20px;
-    margin: 20px;
+    text-align: right; /* تأكيد محاذاة النص لليمين */
 }
 
 .slide-content::before {
@@ -430,6 +439,7 @@ body {
     font-weight: 600;
     margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
 }
 
 .slide-title {
@@ -438,6 +448,7 @@ body {
     margin-bottom: 20px;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: right;
 }
 
 .slide-text {
@@ -445,6 +456,7 @@ body {
     margin-bottom: 30px;
     opacity: 0.9;
     max-width: 500px;
+    text-align: right;
 }
 
 .slide-btn {
@@ -462,6 +474,8 @@ body {
     box-shadow: var(--shadow-md);
     border: none;
     cursor: pointer;
+    text-align: right;
+    justify-content: flex-end;
 }
 
 .slide-btn:hover {
@@ -469,7 +483,7 @@ body {
     gap: 15px;
 }
 
-/* Slider Controls */
+/* Slider Controls - تصحيح الاتجاه */
 .slider-control {
     position: absolute;
     top: 50%;
@@ -490,12 +504,13 @@ body {
     justify-content: center;
 }
 
+/* تصحيح الأزرار للغة العربية */
 .prev-slide {
-    right: 30px;
+    left: 30px; /* الزر الأيسر للشريحة التالية */
 }
 
 .next-slide {
-    left: 30px;
+    right: 30px; /* الزر الأيمن للشريحة السابقة */
 }
 
 .slider-control:hover {
@@ -508,8 +523,8 @@ body {
 .slider-indicators {
     position: absolute;
     bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     display: flex;
     gap: 10px;
     z-index: 10;
