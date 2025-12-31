@@ -1606,7 +1606,107 @@ body {
     background: #128C7E;
 }
 
-/* ===== Responsive Design ===== */
+/* ===== Responsive Design للسلايدر ===== */
+@media (max-width: 1200px) {
+    .slide-content {
+        max-width: 500px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-slider {
+        height: 500px;
+    }
+    
+    .slide-content {
+        max-width: 450px;
+        padding: 30px;
+    }
+    
+    .slide-title {
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+    
+    .slide-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 400px;
+    }
+    
+    .slide-content {
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
+        text-align: center;
+        right: auto;
+        left: auto;
+    }
+    
+    .slide-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .slide-text {
+        font-size: 16px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .slide-btn {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .slider-control {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .prev-slide {
+        left: 10px;
+    }
+    
+    .next-slide {
+        right: 10px;
+    }
+    
+    .slider-indicators {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        height: 350px;
+    }
+    
+    .slide-content {
+        padding: 15px;
+    }
+    
+    .slide-title {
+        font-size: 1.5rem;
+    }
+    
+    .slide-text {
+        font-size: 14px;
+    }
+    
+    .slide-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
 @media (max-width: 992px) {
     .hero-slider {
         height: 500px;
