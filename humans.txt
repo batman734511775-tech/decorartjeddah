@@ -1,0 +1,10 @@
+/* TEAM */
+Owner: ديكور آرت جدة
+Contact: mhammadalhisami5544@gmail.com
+Phone: +966535544019
+Location: جدة، السعودية
+
+/* SITE */
+Last update: 2024-01-20
+Language: Arabic
+Doctype: HTML5
