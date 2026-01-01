@@ -5,7 +5,7 @@ Disallow: /admin/
 Crawl-delay: 1
 Request-rate: 1/5
 
-Sitemap: https://decorartjeddah.netlify.app/sitemap.xml
+Sitemap: https://decorartjeddah.vercel.app/sitemap.xml
 
 # Google bots
 User-agent: Googlebot
