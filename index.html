@@ -48,25 +48,61 @@
 <!-- Structured Data المصححة -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "ديكور آرت جدة",
-  "image": "https://decorartjeddah.vercel.app/images/logo.png",
-  "description": "مصمم ديكور متخصص في مدينة جدة، نقدم خدمات تصميم داخلي وديكور للفلل والشقق والمكاتب",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "جدة",
-    "addressRegion": "مكة المكرمة",
-    "addressCountry": "SA"
-  },
-  "telephone": "+966535544019",
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
-    "opens": "09:00",
-    "closes": "17:00"
-  },
-  "url": "https://decorartjeddah.vercel.app/"
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://decorartjeddah.netlify.app/#website",
+            "url": "https://decorartjeddah.netlify.app/",
+            "name": "ديكور آرت جدة",
+            "description": "منصة متخصصة في ديكور وتصميم المنازل في مدينة جدة",
+            "inLanguage": "ar-SA"
+        },
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://decorartjeddah.netlify.app/#localbusiness",
+            "name": "ديكور آرت جدة",
+            "description": "مصمم ديكور متخصص في مدينة جدة، نقدم خدمات تصميم داخلي وديكور للفلل والشقق والمكاتب في جميع أحياء جدة",
+            "url": "https://decorartjeddah.netlify.app/",
+            "telephone": "+966535544019",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "جدة",
+                "addressRegion": "مكة المكرمة",
+                "addressCountry": "SA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 21.4858,
+                "longitude": 39.1925
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "09:00",
+                "closes": "17:00"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/decorartjeddah",
+                "https://www.instagram.com/decorartjeddah",
+                "https://twitter.com/decorartjeddah"
+            ],
+            "areaServed": {
+                "@type": "City",
+                "name": "جدة"
+            }
+        },
+        {
+            "@type": "Organization",
+            "name": "ديكور آرت جدة",
+            "url": "https://decorartjeddah.netlify.app/",
+            "logo": "https://decorartjeddah.netlify.app/images/logo.png",
+            "sameAs": [
+                "https://www.facebook.com/decorartjeddah",
+                "https://www.instagram.com/decorartjeddah"
+            ]
+        }
+    ]
 }
 </script>
 
@@ -292,11 +328,7 @@
                                 <h3 itemprop="name">فيلا سكنية فاخرة</h3>
                                 <div class="project-rating">
     <i class="fas fa-star"></i>
-    <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-        <span itemprop="ratingValue">4.8</span>
-        <meta itemprop="ratingCount" content="42">
-        <meta itemprop="bestRating" content="5">
-    </span>
+    <span>4.8/5</span>
 </div>
                             </div>
                             <div class="project-meta">
@@ -359,11 +391,7 @@
                                 <h3 itemprop="name">شقة ساحلية راقية</h3>
                                 <div class="project-rating">
     <i class="fas fa-star"></i>
-    <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-        <span itemprop="ratingValue">4.8</span>
-        <meta itemprop="ratingCount" content="42">
-        <meta itemprop="bestRating" content="5">
-    </span>
+    <span>4.9/5</span>
 </div>
                             </div>
                             <div class="project-meta">
@@ -426,11 +454,7 @@
                                 <h3 itemprop="name">ترميم فيلا تراثية</h3>
                                 <div class="project-rating">
     <i class="fas fa-star"></i>
-    <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-        <span itemprop="ratingValue">4.8</span>
-        <meta itemprop="ratingCount" content="42">
-        <meta itemprop="bestRating" content="5">
-    </span>
+    <span>5.0/5</span>
 </div>
                             </div>
                             <div class="project-meta">
@@ -493,11 +517,7 @@
                                 <h3 itemprop="name">مقر شركة تقنية</h3>
                                 <div class="project-rating">
     <i class="fas fa-star"></i>
-    <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-        <span itemprop="ratingValue">4.8</span>
-        <meta itemprop="ratingCount" content="42">
-        <meta itemprop="bestRating" content="5">
-    </span>
+    <span>4.7/5</span>
 </div>
                             </div>
                             <div class="project-meta">
@@ -887,5 +907,61 @@
             ⚠️ يرجى تمكين JavaScript للحصول على تجربة كاملة للموقع.
         </div>
     </noscript>
+    <!-- ===== Structured Data للمشاريع (في نهاية body قبل </body>) ===== -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CreativeWork",
+            "name": "فيلا سكنية فاخرة في حي الروضة جدة",
+            "description": "تصميم عصري بلمسات تراثية، دمج بين الفخامة والراحة مع مراعاة مناخ جدة الساحلي",
+            "image": "https://decorartjeddah.netlify.app/images/projects/villas/villa-1.jpg",
+            "dateCreated": "2023",
+            "location": {
+                "@type": "Place",
+                "name": "حي الروضة، جدة"
+            },
+            "size": "450م²"
+        },
+        {
+            "@type": "CreativeWork",
+            "name": "شقة ساحلية راقية على كورنيش جدة",
+            "description": "تصميم ساحلي مع مواد مقاومة للرطوبة، إطلالة بانورامية على البحر الأحمر",
+            "image": "https://decorartjeddah.netlify.app/images/projects/apartments/apartment-1.jpg",
+            "dateCreated": "2024",
+            "location": {
+                "@type": "Place",
+                "name": "الكورنيش، جدة"
+            },
+            "size": "180م²"
+        },
+        {
+            "@type": "CreativeWork",
+            "name": "ترميم فيلا تراثية في جدة التاريخية",
+            "description": "ترميم مع الحفاظ على الطابع التراثي، تجديد الرواشين والأفنية الداخلية",
+            "image": "https://decorartjeddah.netlify.app/images/projects/villas/villa-2.jpg",
+            "dateCreated": "2022",
+            "location": {
+                "@type": "Place",
+                "name": "جدة التاريخية"
+            },
+            "size": "320م²"
+        },
+        {
+            "@type": "CreativeWork",
+            "name": "مقر شركة تقنية في حي الصحيفة جدة",
+            "description": "تصميم مكتب مفتوح مع مساحات تعاونية، إضاءة ذكية، وتقنيات متطورة",
+            "image": "https://decorartjeddah.netlify.app/images/projects/offices/office-1.jpg",
+            "dateCreated": "2023",
+            "location": {
+                "@type": "Place",
+                "name": "حي الصحيفة، جدة"
+            },
+            "size": "800م²"
+        }
+    ]
+}
+</script>
 </body>
 </html>
