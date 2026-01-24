@@ -159,16 +159,25 @@
                 </div>
                 
                 <!-- Navigation -->
-                <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
-                    <ul class="nav-menu">
-                        <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> الرئيسية</a></li>
-                        <li><a href="#portfolio" class="nav-link"><i class="fas fa-images"></i> معرض الأعمال</a></li>
-                        <li><a href="#map" class="nav-link"><i class="fas fa-map-marked-alt"></i> خريطة جدة</a></li>
-                        <li><a href="#historical" class="nav-link"><i class="fas fa-landmark"></i> جدة التاريخية</a></li>
-                        <li><a href="#weather" class="nav-link"><i class="fas fa-cloud-sun"></i> طقس وديكور</a></li>
-                        <li><a href="#contact" class="nav-link cta-link"><i class="fas fa-phone-alt"></i> اتصل بنا</a></li>
-                    </ul>
-                </nav>
+                <!-- استبدل القائمة الحالية بهذه -->
+<nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
+    <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> الرئيسية</a></li>
+        <li><a href="#portfolio" class="nav-link"><i class="fas fa-images"></i> معرض الأعمال</a></li>
+        <li><a href="#map" class="nav-link"><i class="fas fa-map-marked-alt"></i> خريطة جدة</a></li>
+        <li class="dropdown">
+            <a href="#" class="nav-link"><i class="fas fa-location-dot"></i> مناطق جدة <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="neighborhoods/rawdah.html"><i class="fas fa-chevron-left"></i> حي الروضة</a></li>
+                <li><a href="neighborhoods/corniche.html"><i class="fas fa-chevron-left"></i> الكورنيش</a></li>
+                <li><a href="neighborhoods/naseem.html"><i class="fas fa-chevron-left"></i> حي النعيم</a></li>
+                <li><a href="neighborhoods/historical.html"><i class="fas fa-chevron-left"></i> جدة التاريخية</a></li>
+            </ul>
+        </li>
+        <li><a href="#weather" class="nav-link"><i class="fas fa-cloud-sun"></i> طقس وديكور</a></li>
+        <li><a href="#contact" class="nav-link cta-link"><i class="fas fa-phone-alt"></i> اتصل بنا</a></li>
+    </ul>
+</nav>
                 
                 <!-- Mobile Menu Button -->
                 <button class="mobile-menu-btn" aria-label="فتح قائمة التنقل" aria-expanded="false">
@@ -638,6 +647,33 @@
                         </div>
                     </div>
                 </div>
+                
+<div class="neighborhoods-links">
+    <h3>تصفح دليل ديكور أحياء جدة بالتفصيل:</h3>
+    <div class="neighborhood-buttons">
+        <a href="neighborhoods/rawdah.html" class="neighborhood-btn">
+            <i class="fas fa-home"></i>
+            <span>حي الروضة</span>
+            <small>الشمال - راقي</small>
+        </a>
+        <a href="neighborhoods/corniche.html" class="neighborhood-btn">
+            <i class="fas fa-umbrella-beach"></i>
+            <span>الكورنيش</span>
+            <small>ساحلي - فاخر</small>
+        </a>
+        <a href="neighborhoods/naseem.html" class="neighborhood-btn">
+            <i class="fas fa-users"></i>
+            <span>حي النعيم</span>
+            <small>عائلي - هادئ</small>
+        </a>
+        <a href="neighborhoods/historical.html" class="neighborhood-btn">
+            <i class="fas fa-landmark"></i>
+            <span>جدة التاريخية</span>
+            <small>تراثي - فريد</small>
+        </a>
+    </div>
+</div>
+
             </section>
             
             <!-- ===== Historical Jeddah ===== -->
