@@ -2390,3 +2390,110 @@ body {
         align-items: center;
     }
 }
+
+/* ===== Dropdown Menu ===== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--card-bg);
+    min-width: 220px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all var(--transition-fast);
+    z-index: 1000;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.dropdown-menu a:hover {
+    background: var(--primary-color);
+    color: white;
+    padding-right: 25px;
+}
+
+/* Neighborhoods Links Section */
+.neighborhoods-links {
+    text-align: center;
+    margin: 60px 0 40px;
+    padding: 40px;
+    background: var(--light-bg);
+    border-radius: var(--radius-lg);
+}
+
+.neighborhoods-links h3 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.neighborhood-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.neighborhood-btn {
+    background: var(--card-bg);
+    padding: 25px 20px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+    box-shadow: var(--shadow-sm);
+}
+
+.neighborhood-btn:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.neighborhood-btn i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.neighborhood-btn span {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.neighborhood-btn small {
+    color: var(--gray-medium);
+    font-size: 0.9rem;
+}
