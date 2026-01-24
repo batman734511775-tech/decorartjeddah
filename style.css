@@ -2073,3 +2073,327 @@ body {
     color: var(--gray-medium);
     font-size: 1.1rem;
 }
+
+/* ===== Neighborhood Pages Styles ===== */
+.neighborhood-hero {
+    background: linear-gradient(135deg, rgba(156, 124, 92, 0.9), rgba(109, 140, 139, 0.9)),
+                url('../images/neighborhoods/rawdah-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 40px;
+    border-radius: 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.neighborhood-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.neighborhood-hero .highlight {
+    color: #ffd700;
+    border-bottom: 3px solid #ffd700;
+}
+
+.neighborhood-hero .subtitle {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.phone-btn {
+    background: white;
+    color: var(--primary-color);
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Neighborhood Content */
+.neighborhood-content {
+    padding: 60px 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+}
+
+.content-main h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.content-main h3 {
+    color: var(--text-color);
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.features-list li {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    border-right: 5px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.project-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: var(--gray-dark);
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seo-keywords-box {
+    background: var(--light-bg);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 40px;
+    border: 2px dashed var(--primary-light);
+}
+
+.seo-keywords-box h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.seo-keywords-box p {
+    color: var(--gray-dark);
+    line-height: 1.8;
+}
+
+/* Sidebar */
+.content-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.contact-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-box h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-box p {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-btn {
+    display: block;
+    background: white;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.areas-box {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+}
+
+.areas-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.areas-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.areas-box li {
+    padding: 10px 0;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--gray-light);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.areas-box li:before {
+    content: "📍";
+}
+
+.areas-box li:last-child {
+    border-bottom: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 60px 0;
+    background: var(--light-bg);
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.contact-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.contact-options {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-option {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    width: 250px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-option i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-option span {
+    display: block;
+    color: var(--gray-medium);
+    margin-bottom: 5px;
+}
+
+.contact-option strong {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-sidebar {
+        position: static;
+    }
+    
+    .neighborhood-hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .neighborhood-hero {
+        padding: 50px 20px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-options {
+        flex-direction: column;
+        align-items: center;
+    }
+}
