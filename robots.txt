@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /neighborhoods/
+Allow: /images/neighborhoods/
 Disallow: /private/
 Disallow: /admin/
 Crawl-delay: 1
