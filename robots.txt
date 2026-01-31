@@ -4,21 +4,16 @@ Allow: /neighborhoods/
 Allow: /images/neighborhoods/
 Disallow: /private/
 Disallow: /admin/
-Crawl-delay: 1
-Request-rate: 1/5
 
 Sitemap: https://decorartjeddah.vercel.app/sitemap.xml
 
 # Google bots
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0.5
 
 User-agent: Googlebot-Image
 Allow: /images/
-Crawl-delay: 0.5
 
 # Bing bots
 User-agent: bingbot
 Allow: /
-Crawl-delay: 1
