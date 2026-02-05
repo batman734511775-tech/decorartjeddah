@@ -2497,3 +2497,43 @@ body {
     color: var(--gray-medium);
     font-size: 0.9rem;
 }
+
+.internal-links {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px 0;
+    border-right: 5px solid var(--primary-color);
+}
+
+.internal-links h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.internal-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.internal-links li {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--gray-light);
+}
+
+.internal-links li:last-child {
+    border-bottom: none;
+}
+
+.internal-links a {
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.internal-links a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
