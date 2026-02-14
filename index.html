@@ -4,6 +4,8 @@
     <!-- Character Encoding -->
     <meta charset="UTF-8">
     
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
     <!-- Viewport for Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -35,12 +37,15 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
     
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" title="خريطة الموقع" href="/sitemap.xml">
@@ -107,7 +112,7 @@
 </script>
 
 </head>
-<body itemscope itemtype="https://schema.org/WebPage">
+<body itemscope itemtype="https://schema.org/jpgage">
     
     <!-- ===== Theme Toggle ===== -->
     <div class="theme-toggle-container">
@@ -223,7 +228,7 @@
         <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/sliders/slide-3-jeddah.jpg');">
             <div class="slide-content">
                 <div class="slide-badge">🏠 سكني</div>
-                 class="slide-title">أفكار ديكور لأحياء جدة المختلفة</h2>
+                <h2 class="slide-title">أفكار ديكور لأحياء جدة المختلفة</h2>
                 <p class="slide-text">من الشاطئ إلى النخيل، ديكور لكل حي</p>
                 <a href="#map" class="slide-btn">
                     <span>شاهد الأحياء</span>
@@ -324,7 +329,7 @@
                     <article class="portfolio-item" data-category="villa" data-id="1" itemscope itemtype="https://schema.org/CreativeWork">
                         <div class="portfolio-image">
                             <img src="images/projects/villas/villa-1.jpg" 
-                                 alt="فيلا فاخرة في حي الروضة جدة - تصميم ديكور داخلي"
+                                 alt="فيلا فاخرة في حي الروضة جدة - تصميم ديكور عصري مع إضاءة ذكية"
                                  loading="lazy"
                                  itemprop="image"
                                  width="400"
@@ -387,7 +392,7 @@
                     <article class="portfolio-item" data-category="apartment" data-id="2" itemscope itemtype="https://schema.org/CreativeWork">
                         <div class="portfolio-image">
                             <img src="images/projects/apartments/apartment-1.jpg" 
-                                 alt="شقة ساحلية على كورنيش جدة - ديكور داخلي مقاوم للرطوبة"
+                                 alt="شقة ساحلية راقية على كورنيش جدة - تصميم مقاوم للرطوبة مع إطلالة بحرية"
                                  loading="lazy"
                                  itemprop="image"
                                  width="400"
@@ -450,7 +455,7 @@
                     <article class="portfolio-item" data-category="villa" data-id="3" itemscope itemtype="https://schema.org/CreativeWork">
                         <div class="portfolio-image">
                             <img src="images/projects/villas/villa-2.jpg" 
-                                 alt="ترميم فيلا تراثية في جدة التاريخية - ديكور تراثي معاصر"
+                                 alt="ترميم فيلا تراثية في جدة التاريخية - ديكور يحافظ على الرواشين الخشبية"
                                  loading="lazy"
                                  itemprop="image"
                                  width="400"
@@ -513,7 +518,7 @@
                     <article class="portfolio-item" data-category="office" data-id="4" itemscope itemtype="https://schema.org/CreativeWork">
                         <div class="portfolio-image">
                             <img src="images/projects/offices/office-1.jpg" 
-                                 alt="مكتب شركة تقنية في جدة - تصميم مكتب عصري"
+                                 alt="مقر شركة تقنية في حي الصحيفة جدة - تصميم مكتب عصري مفتوح"
                                  loading="lazy"
                                  itemprop="image"
                                  width="400"
@@ -1008,6 +1013,20 @@
         }
     ]
 }
+</script>
+
+<script>
+// ضع هذا في نهاية الصفحة قبل </body>
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href], img[src]');
+    links.forEach(element => {
+        const url = element.href || element.src;
+        if (url && url.startsWith(window.location.origin)) {
+            fetch(url, { method: 'HEAD' })
+                .catch(() => console.log('⚠️ رابط معطل:', url));
+        }
+    });
+});
 </script>
 </body>
 </html>
