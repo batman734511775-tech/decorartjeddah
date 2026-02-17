@@ -943,3 +943,27 @@ function initPerformanceMonitoring() {
         }
     });
 }
+
+// أضف هذا في script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const lazyBackgrounds = document.querySelectorAll('[data-bg]');
+    
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    element.style.backgroundImage = `url(${element.dataset.bg})`;
+                    observer.unobserve(element);
+                }
+            });
+        });
+        
+        lazyBackgrounds.forEach(bg => observer.observe(bg));
+    } else {
+        // Fallback
+        lazyBackgrounds.forEach(bg => {
+            bg.style.backgroundImage = `url(${bg.dataset.bg})`;
+        });
+    }
+});
