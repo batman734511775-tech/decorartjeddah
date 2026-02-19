@@ -1,257 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar-SA" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{PAGE_TITLE}</title>
-    <meta name="description" content="{META_DESCRIPTION}">
-    
-    <!-- Canonical & OG Tags -->
-    <link rel="canonical" href="{CANONICAL_URL}">
-    <meta property="og:title" content="{OG_TITLE}">
-    <meta property="og:description" content="{OG_DESCRIPTION}">
-    <meta property="og:image" content="{OG_IMAGE}">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "{SERVICE_NAME}",
-        "description": "{SERVICE_DESCRIPTION}",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "ديكور آرت جدة",
-            "telephone": "+966535544019",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "جدة",
-                "addressRegion": "مكة المكرمة",
-                "addressCountry": "SA"
-            }
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "جدة",
-            "containsPlace": {
-                "@type": "{PLACE_TYPE}",
-                "name": "{NEIGHBORHOOD_NAME}",
-                "description": "{NEIGHBORHOOD_SCHEMA_DESC}"
-            }
-        }
-    }
-    </script>
-    
-    <!-- الروابط المشتركة -->
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- ===== Header ===== -->
-    <header class="main-header">
-        <div class="container">
-            <div class="header-inner">
-                <!-- Logo -->
-                <div class="logo-wrapper">
-                    <a href="../index.html" class="logo" aria-label="ديكور آرت جدة - الصفحة الرئيسية">
-                        <div class="logo-icon">
-                            <i class="fas fa-palette"></i>
-                            <div class="jeddah-mark">🌴</div>
-                        </div>
-                        <div class="logo-text">
-                            <h1 class="logo-title">ديكور آرت <span class="city-badge">جدة</span></h1>
-                            <p class="logo-subtitle">تصميم داخلي يلهم ويروق</p>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Navigation -->
-                <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
-                    <ul class="nav-menu">
-                        <li><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> الرئيسية</a></li>
-                        <li><a href="../index.html#portfolio" class="nav-link"><i class="fas fa-images"></i> معرض الأعمال</a></li>
-                        <li><a href="../index.html#map" class="nav-link"><i class="fas fa-map-marked-alt"></i> خريطة جدة</a></li>
-                        <li><a href="historical.html" class="nav-link"><i class="fas fa-landmark"></i> جدة التاريخية</a></li>
-                        <li><a href="../index.html#weather" class="nav-link"><i class="fas fa-cloud-sun"></i> طقس وديكور</a></li>
-                        <li><a href="tel:+966535544019" class="nav-link cta-link"><i class="fas fa-phone-alt"></i> اتصل بنا</a></li>
-                    </ul>
-                </nav>
-                
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" aria-label="فتح قائمة التنقل" aria-expanded="false">
-                    <span class="menu-line"></span>
-                    <span class="menu-line"></span>
-                    <span class="menu-line"></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- ===== Neighborhood Hero ===== -->
-    <section class="neighborhood-hero" style="background: linear-gradient(135deg, rgba(156, 124, 92, 0.9), rgba(109, 140, 139, 0.9)), url('../images/neighborhoods/{BACKGROUND_IMAGE}');">
-        <div class="container">
-            <h1>{HERO_TITLE}</h1>
-            <p class="subtitle">{HERO_SUBTITLE}</p>
-            <div class="cta-buttons">
-                <a href="tel:+966535544019" class="cta-btn phone-btn">
-                    <i class="fas fa-phone"></i> اتصل الآن: 0535544019
-                </a>
-                <a href="https://wa.me/966535544019" class="cta-btn whatsapp-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-whatsapp"></i> استشارة مجانية على واتساب
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== Main Content ===== -->
-    <main class="main-content">
-        <div class="container">
-            <section class="neighborhood-content">
-                <div class="content-grid">
-                    <!-- Main Content -->
-                    <div class="content-main">
-                        <h2>خدماتنا في {NEIGHBORHOOD_NAME}</h2>
-                        <p>{INTRODUCTION_PARAGRAPH}</p>
-                        
-                        <h3>لماذا تختارنا في {NEIGHBORHOOD_NAME}؟</h3>
-                        <ul class="features-list">
-                            {FEATURES_LIST}
-                        </ul>
-
-                        <h3>مشاريعنا المنفذة في {NEIGHBORHOOD_NAME}</h3>
-                        <p>{PROJECTS_INTRO}</p>
-                        
-                        <div class="projects-grid">
-                            {PROJECTS_CARDS}
-                        </div>
-
-                        <!-- SEO Keywords -->
-                        <div class="seo-keywords-box">
-                            <h4>الكلمات المفتاحية لـ {NEIGHBORHOOD_NAME}:</h4>
-                            <p>{KEYWORDS_LIST}</p>
-                        </div>
-
-                        <!-- Local Tips -->
-                        <div class="local-tips">
-                            <h3>نصائح ديكور خاصة بـ {NEIGHBORHOOD_NAME}</h3>
-                            <div class="tips-grid">
-                                {LOCAL_TIPS}
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sidebar -->
-                    <div class="content-sidebar">
-                        <!-- Contact Box -->
-                        <div class="contact-box">
-                            <h3>استشارة مجانية في {NEIGHBORHOOD_NAME}</h3>
-                            <p><i class="fas fa-phone"></i> <strong>0535544019</strong></p>
-                            <p><i class="fas fa-clock"></i> الأحد - الخميس: 9ص - 5م</p>
-                            <p><i class="fas fa-map-marker-alt"></i> نخدم جميع مناطق {NEIGHBORHOOD_NAME}</p>
-                            <a href="tel:+966535544019" class="sidebar-btn">اتصل للاستشارة</a>
-                        </div>
-
-                        <!-- Areas Served -->
-                        <div class="areas-box">
-                            <h3>نخدم في {NEIGHBORHOOD_NAME}:</h3>
-                            <ul>
-                                {AREAS_LIST}
-                            </ul>
-                        </div>
-
-                        <!-- Quick Links -->
-                        <div class="quick-links">
-                            <h3>تصفح مناطق أخرى</h3>
-                            <ul>
-                                <li><a href="rawdah.html"><i class="fas fa-chevron-left"></i> ديكور حي الروضة</a></li>
-                                <li><a href="corniche.html"><i class="fas fa-chevron-left"></i> ديكور الكورنيش</a></li>
-                                <li><a href="naseem.html"><i class="fas fa-chevron-left"></i> ديكور حي النعيم</a></li>
-                                <li><a href="historical.html"><i class="fas fa-chevron-left"></i> جدة التاريخية</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section class="contact-section">
-                <h2>تواصل معنا للبدء بمشروعك في {NEIGHBORHOOD_NAME}</h2>
-                <div class="contact-options">
-                    <a href="tel:+966535544019" class="contact-option">
-                        <i class="fas fa-phone"></i>
-                        <span>اتصال مباشر</span>
-                        <strong>0535544019</strong>
-                    </a>
-                    <a href="https://wa.me/966535544019" class="contact-option" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>واتساب سريع</span>
-                        <strong>اضغط للدردشة</strong>
-                    </a>
-                    <a href="../index.html#portfolio" class="contact-option">
-                        <i class="fas fa-images"></i>
-                        <span>معرض الأعمال</span>
-                        <strong>شاهد مشاريعنا</strong>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- ===== Footer ===== -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Info -->
-                <div class="footer-info">
-                    <div class="footer-logo">
-                        <i class="fas fa-palette"></i>
-                        <div class="footer-logo-text">
-                            <h3>ديكور آرت <span class="footer-city">جدة</span></h3>
-                            <p>إلهام ديكور لمنازل جدة</p>
-                        </div>
-                    </div>
-                    <p class="footer-description">
-                        مصمم ديكور متخصص في مدينة جدة، نقدم خدمات تصميم داخلي وديكور للفلل والشقق والمكاتب في جميع أحياء جدة.
-                    </p>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="footer-links">
-                    <h4 class="footer-title">مناطق الخدمة</h4>
-                    <ul>
-                        <li><a href="rawdah.html"><i class="fas fa-chevron-left"></i> حي الروضة</a></li>
-                        <li><a href="corniche.html"><i class="fas fa-chevron-left"></i> الكورنيش</a></li>
-                        <li><a href="naseem.html"><i class="fas fa-chevron-left"></i> حي النعيم</a></li>
-                        <li><a href="historical.html"><i class="fas fa-chevron-left"></i> جدة التاريخية</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div class="footer-contact">
-                    <h4 class="footer-title">اتصل بنا</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> جدة، المملكة العربية السعودية</li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+966535544019">+966 53 554 4019</a></li>
-                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/966535544019" target="_blank" rel="noopener">واتساب: 0535544019</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:mhammadalhisami5544@gmail.com">mhammadalhisami5544@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <div class="footer-bottom">
-                <p class="copyright">© 2024 ديكور آرت جدة. جميع الحقوق محفوظة.</p>
-                <div class="footer-bottom-links">
-                    <a href="../index.html">الرئيسية</a>
-                    <a href="../index.html#portfolio">معرض الأعمال</a>
-                    <a href="../index.html#contact">اتصل بنا</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ===== Scripts ===== -->
-    <script src="../script.js"></script>
-</body>
-</html>
