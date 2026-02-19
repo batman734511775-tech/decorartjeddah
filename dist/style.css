@@ -359,7 +359,7 @@ body {
 
 /* ===== Hero Slider - الإصلاح الكامل ===== */
 .hero-slider {
-    height: 600px;
+    height: 600px; /* ارتفاع ثابت */
     position: relative;
     overflow: hidden;
     margin-top: -1px;
@@ -2379,4 +2379,10 @@ body {
 .internal-links a:hover {
     color: var(--primary-color);
     text-decoration: underline;
+}
+
+img {
+    aspect-ratio: attr(width) / attr(height);
+    max-width: 100%;
+    height: auto;
 }
