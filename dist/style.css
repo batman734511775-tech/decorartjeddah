@@ -2393,3 +2393,66 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* ===== تحسينات خاصة بالجوال ===== */
+@media (max-width: 768px) {
+    /* خطوط أخف للجوال */
+    body {
+        font-family: 'Cairo', sans-serif;
+        font-weight: 400;
+    }
+    
+    h1, h2, h3, h4 {
+        font-weight: 600;
+    }
+    
+    /* تقليل حجم الخطوط */
+    .slide-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* تعطيل الظلال الثقيلة */
+    .portfolio-item,
+    .district-card,
+    .weather-widget {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    /* تعطيل الـ animations على الجوال */
+    .float-btn {
+        animation: none;
+    }
+    
+    /* تحسين المسافات */
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* ===== تحسين srcset للصور ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+}
+
+/* ===== تعطيل تأثيرات معينة للجوال الصغير ===== */
+@media (max-width: 480px) {
+    .parallax-background {
+        display: none; /* تعطيل parallax على الشاشات الصغيرة جداً */
+    }
+    
+    .floating-buttons {
+        gap: 10px;
+    }
+    
+    .float-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
