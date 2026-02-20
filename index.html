@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Meta Tags -->
+    <!-- Meta Tags الرئيسية -->
     <title>ديكور آرت جدة | تصميم داخلي وديكور منازل في جدة | +966535544019</title>
-    <meta name="description" content="مصمم ديكور متخصص في جدة، نقدم خدمات تصميم داخلي، ديكور فلل، شقق، مكاتب في جميع أحياء جدة. اتصل الآن: +966535544019">
+    <meta name="description" content="مصمم ديكور متخصص في جدة، نقدم خدمات تصميم داخلي، ديكور فلل، شقق، مكاتب في جميع أحياء جدة. مواد مقاومة للرطوبة وتصاميم عصرية. اتصل الآن: +966535544019">
+    <meta name="keywords" content="ديكور جدة, مصمم ديكور جدة, ديكور منازل جدة, تصميم داخلي جدة, ديكور فلل جدة, ديكور شقق جدة, مقاول ديكور جدة, ديكور مقاوم للرطوبة">
+    <meta name="author" content="ديكور آرت جدة">
+    <meta name="robots" content="index, follow">
     
-    <!-- Preconnects -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://decorartjeddah.vercel.app/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://decorartjeddah.vercel.app/">
+    <meta property="og:title" content="ديكور آرت جدة | تصميم داخلي وديكور منازل في جدة">
+    <meta property="og:description" content="مصمم ديكور متخصص في جدة، نقدم خدمات تصميم داخلي، ديكور فلل، شقق، مكاتب في جميع أحياء جدة.">
+    <meta property="og:image" content="https://decorartjeddah.vercel.app/images/og-image.jpg">
+    <meta property="og:locale" content="ar_SA">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ديكور آرت جدة | تصميم داخلي وديكور منازل في جدة">
+    <meta name="twitter:description" content="مصمم ديكور متخصص في جدة، نقدم خدمات تصميم داخلي، ديكور فلل، شقق، مكاتب.">
+    <meta name="twitter:image" content="https://decorartjeddah.vercel.app/images/twitter-image.jpg">
+    
+    <!-- Preconnects للخوادم الخارجية -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
-    <!-- Preload الصورة الرئيسية -->
+    <!-- Preload للصورة الرئيسية (LCP) -->
     <link rel="preload" as="image" href="images/sliders/slide-1-jeddah.jpg" fetchpriority="high">
     
     <!-- CSS غير متزامن -->
     <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
     
+    <!-- خط Cairo غير متزامن -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"></noscript>
     
+    <!-- Font Awesome غير متزامن -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
@@ -32,11 +54,45 @@
     
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Structured Data للـ LocalBusiness (بدون أخطاء) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ديكور آرت جدة",
+        "description": "مصمم ديكور متخصص في مدينة جدة",
+        "url": "https://decorartjeddah.vercel.app/",
+        "telephone": "+966535544019",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "جدة",
+            "addressRegion": "مكة المكرمة",
+            "addressCountry": "SA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 21.4858,
+            "longitude": 39.1925
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "09:00",
+            "closes": "17:00"
+        }],
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "City",
+            "name": "جدة"
+        }
+    }
+    </script>
 </head>
 <body>
-    <!-- تحديد أولوية الصورة الرئيسية -->
+    <!-- صورة مخفية لتحديد أولوية LCP -->
     <img src="images/sliders/slide-1-jeddah.jpg" style="display:none;" fetchpriority="high" alt="">
-
+    
     <!-- ===== Theme Toggle ===== -->
     <div class="theme-toggle-container">
         <button class="theme-toggle-btn" id="themeToggle" aria-label="تبديل وضع الليل والنهار">
@@ -66,12 +122,13 @@
         </button>
     </div>
     
-    <!-- ===== Header (مختصر) ===== -->
+    <!-- ===== Header ===== -->
     <header class="main-header">
         <div class="container">
             <div class="header-inner">
+                <!-- Logo -->
                 <div class="logo-wrapper">
-                    <a href="/" class="logo">
+                    <a href="/" class="logo" aria-label="ديكور آرت جدة - الصفحة الرئيسية">
                         <div class="logo-icon">
                             <i class="fas fa-palette"></i>
                             <div class="jeddah-mark">🌴</div>
@@ -82,7 +139,9 @@
                         </div>
                     </a>
                 </div>
-                <nav class="main-nav">
+                
+                <!-- Navigation -->
+                <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
                     <ul class="nav-menu">
                         <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> الرئيسية</a></li>
                         <li><a href="#portfolio" class="nav-link"><i class="fas fa-images"></i> معرض الأعمال</a></li>
@@ -99,7 +158,9 @@
                         <li><a href="#contact" class="nav-link cta-link"><i class="fas fa-phone-alt"></i> اتصل بنا</a></li>
                     </ul>
                 </nav>
-                <button class="mobile-menu-btn" aria-label="فتح القائمة">
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" aria-label="فتح القائمة" aria-expanded="false">
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
@@ -108,9 +169,10 @@
         </div>
     </header>
     
-    <!-- ===== Hero Slider (مختصر) ===== -->
+    <!-- ===== Hero Slider ===== -->
     <section class="hero-slider" id="home">
         <div class="slider-container">
+            <!-- Slide 1 -->
             <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/sliders/slide-1-jeddah.jpg');">
                 <div class="slide-content">
                     <div class="slide-badge">🌴 جدة</div>
@@ -119,7 +181,35 @@
                     <a href="#discover" class="slide-btn"><span>اكتشف أفكار جدة</span> <i class="fas fa-arrow-left"></i></a>
                 </div>
             </div>
-            <!-- باقي السلايدر كما هو -->
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/sliders/slide-2-jeddah.jpg');">
+                <div class="slide-content">
+                    <div class="slide-badge">🏛️ تراث</div>
+                    <h2 class="slide-title">الحفاظ على تراث جدة في ديكور منزلك</h2>
+                    <p class="slide-text">دمج الأصالة مع الحداثة في تصميم جدة</p>
+                    <a href="#historical" class="slide-btn"><span>استكشف التراث</span> <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/sliders/slide-3-jeddah.jpg');">
+                <div class="slide-content">
+                    <div class="slide-badge">🏠 سكني</div>
+                    <h2 class="slide-title">أفكار ديكور لأحياء جدة المختلفة</h2>
+                    <p class="slide-text">من الشاطئ إلى النخيل، ديكور لكل حي</p>
+                    <a href="#map" class="slide-btn"><span>شاهد الأحياء</span> <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-control prev-slide" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+            <button class="slider-control next-slide" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+            
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <button class="indicator active" data-slide="0" aria-label="الشريحة 1"></button>
+                <button class="indicator" data-slide="1" aria-label="الشريحة 2"></button>
+                <button class="indicator" data-slide="2" aria-label="الشريحة 3"></button>
+            </div>
         </div>
     </section>
     
@@ -132,13 +222,31 @@
                 <p class="search-subtitle">اكتشف تصاميم تناسب منازل وجو مدينة جدة</p>
             </div>
             
-            <!-- Portfolio Section (مع صور محسنة) -->
+            <!-- Search Container -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <div class="search-input-group">
+                        <i class="search-icon fas fa-search"></i>
+                        <input type="text" class="search-input" placeholder="مثال: ديكور مناسب للرطوبة في جدة..." aria-label="بحث">
+                        <button class="search-submit-btn" aria-label="بحث"><i class="fas fa-search"></i> <span>بحث في جدة</span></button>
+                    </div>
+                    <div class="search-suggestions">
+                        <span class="suggestions-label">مواضيع جدة:</span>
+                        <a href="#weather" class="suggestion-tag">ديكور مقاوم للرطوبة</a>
+                        <a href="#historical" class="suggestion-tag">جدة التاريخية</a>
+                        <a href="#weather" class="suggestion-tag">ديكور صيفي</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ===== Portfolio Section ===== -->
             <section class="portfolio-section" id="portfolio">
                 <div class="section-header">
                     <h2 class="section-title">معرض أعمالنا في جدة</h2>
                     <p class="section-subtitle">تصاميم ديكور منفذة في مختلف أحياء جدة</p>
                 </div>
                 
+                <!-- Portfolio Filter -->
                 <div class="portfolio-filter">
                     <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> الكل</button>
                     <button class="filter-btn" data-filter="villa"><i class="fas fa-home"></i> فلل</button>
@@ -146,8 +254,9 @@
                     <button class="filter-btn" data-filter="office"><i class="fas fa-briefcase"></i> مكاتب</button>
                 </div>
                 
+                <!-- Portfolio Grid مع صور محسنة -->
                 <div class="portfolio-grid">
-                    <!-- مشروع 1 مع srcset -->
+                    <!-- Project 1 -->
                     <article class="portfolio-item" data-category="villa" data-id="1">
                         <div class="portfolio-image">
                             <picture>
@@ -156,10 +265,8 @@
                                      srcset="images/projects/villas/villa-1-small.jpg 400w,
                                              images/projects/villas/villa-1.jpg 800w"
                                      sizes="(max-width: 768px) 400px, 800px"
-                                     alt="فيلا فاخرة في حي الروضة جدة - تصميم ديكور عصري"
-                                     width="400"
-                                     height="300"
-                                     loading="lazy">
+                                     alt="فيلا فاخرة في حي الروضة جدة - تصميم عصري"
+                                     width="400" height="300" loading="lazy">
                             </picture>
                         </div>
                         <div class="portfolio-info">
@@ -168,7 +275,7 @@
                         </div>
                     </article>
                     
-                    <!-- مشروع 2 -->
+                    <!-- Project 2 -->
                     <article class="portfolio-item" data-category="apartment" data-id="2">
                         <div class="portfolio-image">
                             <picture>
@@ -177,10 +284,8 @@
                                      srcset="images/projects/apartments/apartment-1-small.jpg 400w,
                                              images/projects/apartments/apartment-1.jpg 800w"
                                      sizes="(max-width: 768px) 400px, 800px"
-                                     alt="شقة ساحلية على كورنيش جدة - ديكور مقاوم للرطوبة"
-                                     width="400"
-                                     height="300"
-                                     loading="lazy">
+                                     alt="شقة ساحلية على كورنيش جدة - مقاومة للرطوبة"
+                                     width="400" height="300" loading="lazy">
                             </picture>
                         </div>
                         <div class="portfolio-info">
@@ -189,7 +294,7 @@
                         </div>
                     </article>
                     
-                    <!-- مشروع 3 -->
+                    <!-- Project 3 -->
                     <article class="portfolio-item" data-category="villa" data-id="3">
                         <div class="portfolio-image">
                             <picture>
@@ -199,9 +304,7 @@
                                              images/projects/villas/villa-2.jpg 800w"
                                      sizes="(max-width: 768px) 400px, 800px"
                                      alt="ترميم فيلا تراثية في جدة التاريخية"
-                                     width="400"
-                                     height="300"
-                                     loading="lazy">
+                                     width="400" height="300" loading="lazy">
                             </picture>
                         </div>
                         <div class="portfolio-info">
@@ -210,7 +313,7 @@
                         </div>
                     </article>
                     
-                    <!-- مشروع 4 -->
+                    <!-- Project 4 -->
                     <article class="portfolio-item" data-category="office" data-id="4">
                         <div class="portfolio-image">
                             <picture>
@@ -220,9 +323,7 @@
                                              images/projects/offices/office-1.jpg 800w"
                                      sizes="(max-width: 768px) 400px, 800px"
                                      alt="مقر شركة تقنية في حي الصحيفة جدة"
-                                     width="400"
-                                     height="300"
-                                     loading="lazy">
+                                     width="400" height="300" loading="lazy">
                             </picture>
                         </div>
                         <div class="portfolio-info">
@@ -231,9 +332,71 @@
                         </div>
                     </article>
                 </div>
+                
+                <!-- Load More -->
+                <div class="portfolio-load-more">
+                    <button class="load-more-btn" aria-label="عرض المزيد"><i class="fas fa-plus"></i> عرض المزيد</button>
+                </div>
             </section>
             
-            <!-- باقي المحتوى (مختصر للاختصار) -->
+            <!-- ===== Neighborhoods Links ===== -->
+            <div class="neighborhoods-links">
+                <h3>تصفح دليل ديكور أحياء جدة بالتفصيل:</h3>
+                <div class="neighborhood-buttons">
+                    <a href="neighborhoods/rawdah.html" class="neighborhood-btn">
+                        <i class="fas fa-home"></i>
+                        <span>حي الروضة</span>
+                        <small>شمال - راقي</small>
+                    </a>
+                    <a href="neighborhoods/corniche.html" class="neighborhood-btn">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <span>الكورنيش</span>
+                        <small>ساحلي - فاخر</small>
+                    </a>
+                    <a href="neighborhoods/naseem.html" class="neighborhood-btn">
+                        <i class="fas fa-users"></i>
+                        <span>حي النعيم</span>
+                        <small>عائلي - هادئ</small>
+                    </a>
+                    <a href="neighborhoods/historical.html" class="neighborhood-btn">
+                        <i class="fas fa-landmark"></i>
+                        <span>جدة التاريخية</span>
+                        <small>تراثي - فريد</small>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- ===== Weather Section ===== -->
+            <section class="weather-section" id="weather">
+                <div class="section-header">
+                    <h2 class="section-title">طقس جدة وتأثيره على الديكور</h2>
+                    <p class="section-subtitle">اختر ديكوراً يناسب مناخ جدة</p>
+                </div>
+                <div class="weather-container">
+                    <div class="weather-widget">
+                        <div class="current-weather">
+                            <div class="weather-icon"><i class="fas fa-sun"></i></div>
+                            <div class="weather-details">
+                                <h3>طقس جدة الآن</h3>
+                                <div class="weather-stats">
+                                    <div class="stat"><i class="fas fa-temperature-high"></i> <span>32°C</span></div>
+                                    <div class="stat"><i class="fas fa-tint"></i> <span>رطوبة: 65%</span></div>
+                                    <div class="stat"><i class="fas fa-wind"></i> <span>رياح: 15 كم/س</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weather-tips">
+                            <h4>نصائح ديكور لطقس جدة:</h4>
+                            <div class="tips-grid">
+                                <div class="tip-card"><i class="fas fa-fan"></i> <p>الألوان الفاتحة لتقليل الحرارة</p></div>
+                                <div class="tip-card"><i class="fas fa-water"></i> <p>مواد مقاومة للرطوبة</p></div>
+                                <div class="tip-card"><i class="fas fa-wind"></i> <p>تصميم لتحسين التهوية</p></div>
+                                <div class="tip-card"><i class="fas fa-umbrella"></i> <p>ستائر تحجب الشمس</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     
@@ -241,31 +404,63 @@
     <footer class="main-footer" id="contact">
         <div class="container">
             <div class="footer-content">
+                <!-- Info -->
                 <div class="footer-info">
                     <div class="footer-logo">
                         <i class="fas fa-palette"></i>
-                        <div>
+                        <div class="footer-logo-text">
                             <h3>ديكور آرت <span class="footer-city">جدة</span></h3>
                             <p>إلهام ديكور لمنازل جدة</p>
                         </div>
                     </div>
-                    <p class="footer-description">مصمم ديكور متخصص في جدة، نقدم خدمات تصميم داخلي وديكور للفلل والشقق والمكاتب.</p>
+                    <p class="footer-description">مصمم ديكور متخصص في جدة، نقدم خدمات تصميم داخلي وديكور للفلل والشقق والمكاتب في جميع أحياء جدة.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="انستقرام"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4 class="footer-title">مناطق الخدمة</h4>
+                    <ul>
+                        <li><a href="neighborhoods/rawdah.html"><i class="fas fa-chevron-left"></i> حي الروضة</a></li>
+                        <li><a href="neighborhoods/corniche.html"><i class="fas fa-chevron-left"></i> الكورنيش</a></li>
+                        <li><a href="neighborhoods/naseem.html"><i class="fas fa-chevron-left"></i> حي النعيم</a></li>
+                        <li><a href="neighborhoods/historical.html"><i class="fas fa-chevron-left"></i> جدة التاريخية</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
                 <div class="footer-contact">
-                    <h4>اتصل بنا</h4>
+                    <h4 class="footer-title">اتصل بنا</h4>
                     <ul>
                         <li><i class="fas fa-phone"></i> <a href="tel:+966535544019">+966 53 554 4019</a></li>
-                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/966535544019">واتساب</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/966535544019" target="_blank">واتساب</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:mhammadalhisami5544@gmail.com">mhammadalhisami5544@gmail.com</a></li>
+                        <li><i class="fas fa-clock"></i> الأحد - الخميس: 9ص - 5م</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 ديكور آرت جدة</p>
+                <p class="copyright">© 2024 ديكور آرت جدة. جميع الحقوق محفوظة.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
             </div>
         </div>
     </footer>
     
     <!-- ===== Scripts ===== -->
     <script src="script.js" defer></script>
+    
+    <!-- NoScript Fallback -->
+    <noscript>
+        <style>.portfolio-filter, .mobile-menu-btn, .theme-toggle-container { display: none !important; }</style>
+        <div style="position: fixed; top: 20px; right: 20px; background: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; z-index: 10000;">⚠️ يرجى تمكين JavaScript للحصول على تجربة كاملة.</div>
+    </noscript>
 </body>
 </html>
