@@ -1,5 +1,12 @@
 /* ===== CSS Reset & Base Styles ===== */
 /* ===== إصلاحات عامة لمنع الخروج عن الشاشة ===== */
+/* منع تغير التخطيط للصور */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+}
+
 * {
     box-sizing: border-box;
 }
